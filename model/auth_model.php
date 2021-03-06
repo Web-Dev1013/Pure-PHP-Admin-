@@ -19,7 +19,7 @@ if ($_POST['type'] == "login") {
     $stmt->execute();
     $result_data = array();
     if ($stmt->rowCount() > 0) {
-      $user_query = $conn->prepare("SELECT a.id, c.first_name, c.last_name FROM surveylogin AS a
+      $user_query = $conn->prepare("SELECT a.id,a.level_id, c.first_name, c.last_name FROM surveylogin AS a
       LEFT JOIN surveycode AS b ON a.id = b.survey_login_id 
       LEFT JOIN `user` AS c ON a.user_id = c.id
       WHERE a.username_hash='$entry_code' AND a.password_hash = '$password' AND b.survey_code_hash = '$access_code'");
@@ -29,9 +29,11 @@ if ($_POST['type'] == "login") {
         foreach ($result as $temp) {
           $result_data["first_name"] = $temp["first_name"];
           $result_data["last_name"] = $temp["last_name"];
+          $result_data["level_id"] = $temp["level_id"];
         }
         $_SESSION["access_code"] = $access_code;
         $_SESSION["user_name"] = $result_data["first_name"]." ".$result_data["last_name"];
+        $_SESSION["level_id"] = $result_data["level_id"];
         echo json_encode($result_data);
       } else {
         echo "failed_access_code";
