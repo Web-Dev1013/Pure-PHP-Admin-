@@ -26,7 +26,14 @@
                 access_code: access_code
               },
               success: function(res) {
-                if (res == "failed_user") {
+                console.log(res);
+                if (res == "expired") {
+                  $(".alert-danger .notification").html("This page is no longer available as it exceeds uses or expiration date.");
+                  $(".alert-danger").addClass("alert-active");
+                  setTimeout(function() {
+                    $(".alert-danger").removeClass("alert-active");
+                  }, 1500);
+                } else if (res == "failed_user") {
                   $(".alert-danger .notification").html("Incorrect user code.");
                   $(".alert-danger").addClass("alert-active");
                   setTimeout(function() {

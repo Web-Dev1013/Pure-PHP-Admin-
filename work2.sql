@@ -33,7 +33,7 @@ CREATE TABLE `admin` (
 LOCK TABLES `admin` WRITE;
 
 insert  into `admin`(`id`,`username`,`password`,`visited_time`) values 
-(1,'admin','admin','2021-03-05 08:46:05');
+(1,'admin','admin','2021-03-08 08:54:52');
 
 UNLOCK TABLES;
 
@@ -95,50 +95,50 @@ CREATE TABLE `basecategories` (
 LOCK TABLES `basecategories` WRITE;
 
 insert  into `basecategories`(`id`,`created_at`,`updated_at`,`category_code`,`base_template_id`,`parent_id`,`order`,`flag_id`,`is_hidden`,`is_result`,`percentage`,`icon_url`,`name`,`help`,`sign`,`value_load`,`deactivated_at`) values 
-(1,NULL,NULL,'HE1000',1,0,0,1,NULL,1,1.0000000000,'holiday.png','Holiday Expenditure','Holiday Expenditure',1,9888.0000,NULL),
-(2,NULL,NULL,'HE1000.100',1,1,0,0,NULL,NULL,0.2530446549,'flights.png','Flights','Flights',1,2500.0800,NULL),
-(3,NULL,NULL,'HE1000.200',1,1,1,0,NULL,NULL,0.2828146143,'hotels.png','Hotels','Hotels',1,2794.2100,NULL),
-(4,NULL,NULL,'HE1000.300',1,1,3,0,NULL,NULL,0.1562110961,'sightseeing.png','Sightseeing','Sightseeing',1,1543.3700,NULL),
-(5,NULL,NULL,'HE1000.400',1,1,2,0,NULL,NULL,0.1366711773,'meals.png','Meals','Meals',1,1350.3100,NULL),
-(6,NULL,NULL,'HE1000.500',1,1,4,0,NULL,NULL,0.0143572395,'gifts.png','Gifts','Gifts',1,141.8500,NULL),
-(7,NULL,NULL,'HE1000.600',1,1,5,0,NULL,NULL,0.0825439783,'transportation.png','Transportation','Transportation',1,815.5300,NULL),
-(8,NULL,NULL,'HE1000.999',1,1,7,2,NULL,NULL,0.0743572395,'entertainment.png','Other','Entertainment & Other',1,734.6500,NULL),
-(9,NULL,NULL,'LT2000',2,0,0,1,NULL,1,1.0000000000,'leisure.png','Leisure Time','Leisure Time',1,270.0000,NULL),
-(10,NULL,NULL,'LT2000.100',2,9,1,0,NULL,NULL,0.0653044655,'reading.png','Reading','Reading',1,17.6300,NULL),
-(11,NULL,NULL,'LT2000.200',2,9,2,0,NULL,NULL,0.3428146143,'watching.png','TV, YouTube, NetFlix, etc','TV',1,92.5600,NULL),
-(12,NULL,NULL,'LT2000.300',2,9,3,0,NULL,NULL,0.0562110961,'nap.png','Nap','Nap',1,15.1800,NULL),
-(13,NULL,NULL,'LT2000.400',2,9,4,0,NULL,NULL,0.2366711773,'media.png','Social Media','Social Media',1,63.9000,NULL),
-(14,NULL,NULL,'LT2000.500',2,9,5,0,NULL,NULL,0.1543572395,'games.png','Games','Games',1,41.6800,NULL),
-(15,NULL,NULL,'LT2000.600',2,9,6,0,NULL,NULL,0.0225439783,'meditation.png','Meditation & Relaxing','Meditation & Relaxing',1,6.0900,NULL),
-(16,NULL,NULL,'LT2000.999',2,9,7,2,NULL,NULL,0.1220974290,'other.png','Other','Other',1,32.9700,NULL),
-(17,NULL,NULL,'FES1000',3,0,0,1,NULL,1,1.0000000000,'RB','RB','ADBTEL',1,35.0000,NULL),
-(18,NULL,NULL,'FES1001',4,0,1,1,NULL,1,1.0000000000,'SW','SW','AFDAT',2,3.6500,NULL),
-(20,NULL,NULL,'FES1003',6,0,3,1,NULL,1,1.0000000000,'RFMB','RFMB','ALERFMB',2,2.6500,NULL),
-(21,NULL,NULL,'FES1004',7,0,4,1,NULL,1,1.0000000000,'LWED','LWED','AFDDT',1,3.6500,NULL),
-(22,NULL,NULL,'LIY18',8,0,0,3,NULL,NULL,1.0000000000,'EA','EA','EA',2,0.0000,NULL),
-(23,NULL,NULL,'LIY18.010',8,22,1,3,NULL,1,0.0000000000,'AL','AL','AL',2,0.0000,NULL),
-(147,NULL,NULL,'LT2000',NULL,0,0,1,NULL,1,1.0000000000,'leisure.png','Leisure Time','Leisure Time',1,270.0000,NULL),
-(148,NULL,NULL,'LT2000.100',NULL,9,1,0,NULL,NULL,0.0653044655,'reading.png','Reading','Reading',1,17.6300,NULL),
-(149,NULL,NULL,'LT2000.200',NULL,9,2,0,NULL,NULL,0.3428146143,'watching.png','TV, YouTube, NetFlix, etc','TV',1,92.5600,NULL),
-(150,NULL,NULL,'LT2000.300',NULL,9,3,0,NULL,NULL,0.0562110961,'nap.png','Nap','Nap',1,15.1800,NULL),
-(151,NULL,NULL,'LT2000.400',NULL,9,4,0,NULL,NULL,0.2366711773,'media.png','Social Media','Social Media',1,63.9000,NULL),
-(152,NULL,NULL,'LT2000.500',NULL,9,5,0,NULL,NULL,0.1543572395,'games.png','Games','Games',1,41.6800,NULL),
-(153,NULL,NULL,'LT2000.600',NULL,9,6,0,NULL,NULL,0.0225439783,'meditation.png','Meditation & Relaxing','Meditation & Relaxing',1,6.0900,NULL),
-(154,NULL,NULL,'LT2000.999',NULL,9,9,2,NULL,NULL,0.0850000000,'other.png','Other','Other',1,22.9500,NULL),
-(155,NULL,NULL,'LT2000.700',NULL,9,7,0,NULL,NULL,0.0463000000,'avatar.png','Test',NULL,1,12.5000,NULL),
-(209,NULL,NULL,'LT2000',12,0,0,1,NULL,1,1.0000000000,'leisure.png','Leisure Time','Leisure Time',1,270.0000,NULL),
-(210,NULL,NULL,'LT2000.100',12,9,1,0,NULL,NULL,0.0653044655,'reading.png','Reading','Reading',1,17.6300,NULL),
-(211,NULL,NULL,'LT2000.200',12,9,2,0,NULL,NULL,0.3428146143,'watching.png','TV, YouTube, NetFlix, etc','TV',1,92.5600,NULL),
-(212,NULL,NULL,'LT2000.300',12,9,3,0,NULL,NULL,0.0562110961,'nap.png','Nap','Nap',1,15.1800,NULL),
-(213,NULL,NULL,'LT2000.400',12,9,4,0,NULL,NULL,0.2366711773,'media.png','Social Media','Social Media',1,63.9000,NULL),
-(214,NULL,NULL,'LT2000.500',12,9,5,0,NULL,NULL,0.1543572395,'games.png','Games','Games',1,41.6800,NULL),
-(215,NULL,NULL,'LT2000.600',12,9,6,0,NULL,NULL,0.0225439783,'meditation.png','Meditation & Relaxing','Meditation & Relaxing',1,6.0900,NULL),
-(216,NULL,NULL,'LT2000.999',12,9,9,2,NULL,NULL,0.0850000000,'other.png','Other','Other',1,22.9500,NULL),
-(217,NULL,NULL,'LT2000.700',12,9,7,0,NULL,NULL,0.0463000000,'avatar.png','Test',NULL,1,12.5000,NULL),
-(218,NULL,NULL,'HE1000.700',12,1,7,0,NULL,NULL,0.0374500000,'facebook (1).png','Holiday_test',NULL,1,370.3100,NULL),
-(219,NULL,NULL,'HE1000.800',12,1,7,0,NULL,NULL,0.0350000000,'instagram (1).png','Htest',NULL,1,346.0800,NULL),
-(220,NULL,NULL,'LT2000.700',12,1,7,0,NULL,NULL,0.0350000000,'facebook.png','Add',NULL,1,9.4500,NULL),
-(221,NULL,NULL,'HE1000.800',12,1,7,0,NULL,NULL,0.0300000000,'facebook (1).png','Rosya',NULL,1,296.6400,NULL);
+(1,NULL,NULL,'HE1000',1,0,0,1,0,1,1.0000000000,'holiday.png','Holiday Expenditure','Holiday Expenditure',1,9888.0000,NULL),
+(2,NULL,NULL,'HE1000.100',1,1,0,0,0,NULL,0.2530446549,'flights.png','Flights','Flights',1,2500.0800,NULL),
+(3,NULL,NULL,'HE1000.200',1,1,1,0,0,NULL,0.2828146143,'hotels.png','Hotels','Hotels',1,2794.2100,NULL),
+(4,NULL,NULL,'HE1000.300',1,1,3,0,0,NULL,0.1562110961,'sightseeing.png','Sightseeing','Sightseeing',1,1543.3700,NULL),
+(5,NULL,NULL,'HE1000.400',1,1,2,0,0,NULL,0.1366711773,'meals.png','Meals','Meals',1,1350.3100,NULL),
+(6,NULL,NULL,'HE1000.500',1,1,4,0,0,NULL,0.0143572395,'gifts.png','Gifts','Gifts',1,141.8500,NULL),
+(7,NULL,NULL,'HE1000.600',1,1,5,0,0,NULL,0.0825439783,'transportation.png','Transportation','Transportation',1,815.5300,NULL),
+(8,NULL,NULL,'HE1000.999',1,1,7,2,0,NULL,0.0743572395,'entertainment.png','Other','Entertainment & Other',1,734.6500,NULL),
+(9,NULL,NULL,'LT2000',2,0,0,1,0,1,1.0000000000,'leisure.png','Leisure Time','Leisure Time',1,270.0000,NULL),
+(10,NULL,NULL,'LT2000.100',2,9,1,0,0,NULL,0.0653044655,'reading.png','Reading','Reading',1,17.6300,NULL),
+(11,NULL,NULL,'LT2000.200',2,9,2,0,0,NULL,0.3428146143,'watching.png','TV, YouTube, NetFlix, etc','TV',1,92.5600,NULL),
+(12,NULL,NULL,'LT2000.300',2,9,3,0,0,NULL,0.0562110961,'nap.png','Nap','Nap',1,15.1800,NULL),
+(13,NULL,NULL,'LT2000.400',2,9,4,0,0,NULL,0.2366711773,'media.png','Social Media','Social Media',1,63.9000,NULL),
+(14,NULL,NULL,'LT2000.500',2,9,5,0,0,NULL,0.1543572395,'games.png','Games','Games',1,41.6800,NULL),
+(15,NULL,NULL,'LT2000.600',2,9,6,0,0,NULL,0.0225439783,'meditation.png','Meditation & Relaxing','Meditation & Relaxing',1,6.0900,NULL),
+(16,NULL,NULL,'LT2000.999',2,9,7,2,0,NULL,0.1220974290,'other.png','Other','Other',1,32.9700,NULL),
+(17,NULL,NULL,'FES1000',3,0,0,1,0,1,1.0000000000,'RB','RB','ADBTEL',1,35.0000,NULL),
+(18,NULL,NULL,'FES1001',4,0,1,1,0,1,1.0000000000,'SW','SW','AFDAT',2,3.6500,NULL),
+(20,NULL,NULL,'FES1003',6,0,3,1,0,1,1.0000000000,'RFMB','RFMB','ALERFMB',2,2.6500,NULL),
+(21,NULL,NULL,'FES1004',7,0,4,1,0,1,1.0000000000,'LWED','LWED','AFDDT',1,3.6500,NULL),
+(22,NULL,NULL,'LIY18',8,0,0,3,0,NULL,1.0000000000,'EA','EA','EA',2,0.0000,NULL),
+(23,NULL,NULL,'LIY18.010',8,22,1,3,0,1,0.0000000000,'AL','AL','AL',2,0.0000,NULL),
+(147,NULL,NULL,'LT2000',NULL,0,0,1,0,1,1.0000000000,'leisure.png','Leisure Time','Leisure Time',1,270.0000,NULL),
+(148,NULL,NULL,'LT2000.100',NULL,9,1,0,0,NULL,0.0653044655,'reading.png','Reading','Reading',1,17.6300,NULL),
+(149,NULL,NULL,'LT2000.200',NULL,9,2,0,0,NULL,0.3428146143,'watching.png','TV, YouTube, NetFlix, etc','TV',1,92.5600,NULL),
+(150,NULL,NULL,'LT2000.300',NULL,9,3,0,0,NULL,0.0562110961,'nap.png','Nap','Nap',1,15.1800,NULL),
+(151,NULL,NULL,'LT2000.400',NULL,9,4,0,0,NULL,0.2366711773,'media.png','Social Media','Social Media',1,63.9000,NULL),
+(152,NULL,NULL,'LT2000.500',NULL,9,5,0,0,NULL,0.1543572395,'games.png','Games','Games',1,41.6800,NULL),
+(153,NULL,NULL,'LT2000.600',NULL,9,6,0,0,NULL,0.0225439783,'meditation.png','Meditation & Relaxing','Meditation & Relaxing',1,6.0900,NULL),
+(154,NULL,NULL,'LT2000.999',NULL,9,9,2,0,NULL,0.0850000000,'other.png','Other','Other',1,22.9500,NULL),
+(155,NULL,NULL,'LT2000.700',NULL,9,7,0,0,NULL,0.0463000000,'avatar.png','Test',NULL,1,12.5000,NULL),
+(209,NULL,NULL,'LT2000',12,0,0,1,0,1,1.0000000000,'leisure.png','Leisure Time','Leisure Time',1,270.0000,NULL),
+(210,NULL,NULL,'LT2000.100',12,9,1,0,0,NULL,0.0653044655,'reading.png','Reading','Reading',1,17.6300,NULL),
+(211,NULL,NULL,'LT2000.200',12,9,2,0,0,NULL,0.3428146143,'watching.png','TV, YouTube, NetFlix, etc','TV',1,92.5600,NULL),
+(212,NULL,NULL,'LT2000.300',12,9,3,0,0,NULL,0.0562110961,'nap.png','Nap','Nap',1,15.1800,NULL),
+(213,NULL,NULL,'LT2000.400',12,9,4,0,0,NULL,0.2366711773,'media.png','Social Media','Social Media',1,63.9000,NULL),
+(214,NULL,NULL,'LT2000.500',12,9,5,0,0,NULL,0.1543572395,'games.png','Games','Games',1,41.6800,NULL),
+(215,NULL,NULL,'LT2000.600',12,9,6,0,0,NULL,0.0225439783,'meditation.png','Meditation & Relaxing','Meditation & Relaxing',1,6.0900,NULL),
+(216,NULL,NULL,'LT2000.999',12,9,9,2,0,NULL,0.0850000000,'other.png','Other','Other',1,22.9500,NULL),
+(217,NULL,NULL,'LT2000.700',12,9,7,0,0,NULL,0.0463000000,'avatar.png','Test',NULL,1,12.5000,NULL),
+(218,NULL,NULL,'HE1000.700',12,1,7,0,0,NULL,0.0374500000,'facebook (1).png','Holiday_test',NULL,1,370.3100,NULL),
+(219,NULL,NULL,'HE1000.800',12,1,7,0,0,NULL,0.0350000000,'instagram (1).png','Htest',NULL,1,346.0800,NULL),
+(220,NULL,NULL,'LT2000.700',12,1,7,0,0,NULL,0.0350000000,'facebook.png','Add',NULL,1,9.4500,NULL),
+(221,NULL,NULL,'HE1000.800',12,1,7,0,0,NULL,0.0300000000,'facebook (1).png','Rosya',NULL,1,296.6400,NULL);
 
 UNLOCK TABLES;
 
@@ -337,7 +337,7 @@ CREATE TABLE `company` (
   `activated_at` int(11) DEFAULT NULL,
   `deactivated_at` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=13 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
 
 /*Data for the table `company` */
 
@@ -352,7 +352,9 @@ insert  into `company`(`id`,`created_at`,`name`,`fiscal_eoy_month_end`,`sector_i
 (9,1614649397,'ABC Fintech',5,33,'rosya',4,'12345678','12345678','https://www.abcfin.com','123 ABC Fintech Street','1234567 Rosya','Melbourne',NULL,'2000',6,NULL,NULL),
 (10,1614651710,'Mar2th',9,34,'Mar2th',19,'12345678','12345678','https://rosya.com','123456 Rosya','1234567 Rosya','Melbourne',NULL,'2000',24,NULL,NULL),
 (11,1614651936,'Mar2th-update',9,34,'Mar2th',19,'12345678','','https://rosya.com','123456 Rosya','1234567 Rosya','Melbourne',NULL,'2000',24,NULL,NULL),
-(12,1614652739,'Mar2th-2th',9,34,'Mar2th-2th',19,'12345678','12345678','https://rosya.com','123456 Rosya','1234567 Rosya','Melbourne',NULL,'2000',24,NULL,NULL);
+(12,1614652739,'Mar2th-2th',9,34,'Mar2th-2th',19,'12345678','12345678','https://rosya.com','123456 Rosya','1234567 Rosya','Melbourne',NULL,'2000',24,NULL,NULL),
+(13,1614998310,'Yuri',2,5,'rosya',4,'12345678','12345678','https://rosya.com','123456 Rosya','1234567 Rosya','Melbourne',NULL,'3000',157,NULL,NULL),
+(14,1615000155,'New_company',10,35,'rosya',77,'12345678','12345678','https://rosya.com','123 ABC Fintech Street','Suite 345','Melbourne',NULL,'2000',157,NULL,NULL);
 
 UNLOCK TABLES;
 
@@ -924,7 +926,7 @@ CREATE TABLE `level1customtemplates` (
   `template_description` varchar(765) DEFAULT NULL,
   `deactivated_at` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=15 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
 
 /*Data for the table `level1customtemplates` */
 
@@ -943,7 +945,12 @@ insert  into `level1customtemplates`(`id`,`created_at`,`updated_at`,`surveylogin
 (11,NULL,NULL,22,17,'HE1000','Holiday Expenditure -Mar2th-4',NULL,NULL),
 (12,NULL,NULL,22,17,'LT2000','Leisure Time - Mar2th-4',NULL,NULL),
 (13,NULL,NULL,23,18,'LT2000','Leisure Time - TEST',NULL,NULL),
-(14,NULL,NULL,23,18,'HE1000','Holiday Expenditure - TEST',NULL,NULL);
+(14,NULL,NULL,23,18,'HE1000','Holiday Expenditure - TEST',NULL,NULL),
+(15,NULL,NULL,25,19,'HE1000','Holiday Expenditure - Yuri',NULL,NULL),
+(16,NULL,NULL,25,19,'LT2000','Leisure Time - Yuri -2',NULL,NULL),
+(17,NULL,NULL,NULL,NULL,'LT2000','Leisure Time - Yuri -2',NULL,NULL),
+(18,NULL,NULL,25,19,'HE1000','234234234',NULL,NULL),
+(19,NULL,NULL,25,19,'HE1000','Mar8th-1',NULL,NULL);
 
 UNLOCK TABLES;
 
@@ -1107,7 +1114,7 @@ CREATE TABLE `level1surveypages` (
   `activated_at` int(11) DEFAULT NULL,
   `deactivated_at` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8;
 
 /*Data for the table `level1surveypages` */
 
@@ -1147,7 +1154,7 @@ CREATE TABLE `level2customcategories` (
   `deactivated_at` int(11) DEFAULT NULL,
   `activated_at` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE=InnoDB AUTO_INCREMENT=200 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
+) ENGINE=InnoDB AUTO_INCREMENT=276 DEFAULT CHARSET=utf8 ROW_FORMAT=DYNAMIC;
 
 /*Data for the table `level2customcategories` */
 
@@ -1155,12 +1162,12 @@ LOCK TABLES `level2customcategories` WRITE;
 
 insert  into `level2customcategories`(`id`,`created_at`,`survey_login_id`,`survey_code_id`,`base_template_id`,`parent_id`,`order`,`category_code`,`flag_id`,`is_result`,`is_hidden`,`percentage`,`icon_url`,`name`,`help`,`sign`,`value_load`,`deactivated_at`,`activated_at`) values 
 (1,NULL,1,1,1,0,0,'HE1000',1,1,0,1.0000000000,'holiday.png','Holiday Expenditure','Holiday Expenditure',1,9888.00,NULL,NULL),
-(2,NULL,1,1,1,1,1,'HE1000.100',0,NULL,0,0.2530446549,'flights.png','Flights','Flights',1,2500.08,NULL,NULL),
-(3,NULL,1,1,1,1,2,'HE1000.200',0,NULL,0,0.2828146143,'hotels.png','Hotels','Hotels',1,2794.21,NULL,NULL),
-(4,NULL,1,1,1,1,3,'HE1000.300',0,NULL,0,0.1562110961,'sightseeing.png','Sightseeing','Sightseeing',1,1543.37,NULL,NULL),
-(5,NULL,1,1,1,1,4,'HE1000.400',0,NULL,0,0.1366711773,'meals.png','Meals','Meals',1,1350.31,NULL,NULL),
-(6,NULL,1,1,1,1,5,'HE1000.500',0,NULL,0,0.0143572395,'gifts.png','Gifts','Gifts',1,141.85,NULL,NULL),
-(7,NULL,1,1,1,1,6,'HE1000.600',0,NULL,0,0.0825439783,'transportation.png','Transportation','Transportation',1,815.53,NULL,NULL),
+(2,NULL,1,1,1,1,1,'HE1000.100',0,NULL,0,0.2528398058,'flights.png','Flights','Flights',1,2500.08,NULL,NULL),
+(3,NULL,1,1,1,1,2,'HE1000.200',0,NULL,0,0.2825859628,'hotels.png','Hotels','Hotels',1,2794.21,NULL,NULL),
+(4,NULL,1,1,1,1,3,'HE1000.300',0,NULL,0,0.1560851537,'sightseeing.png','Sightseeing','Sightseeing',1,1543.37,NULL,NULL),
+(5,NULL,1,1,1,1,4,'HE1000.400',0,NULL,0,0.1365604773,'meals.png','Meals','Meals',1,1350.31,NULL,NULL),
+(6,NULL,1,1,1,1,5,'HE1000.500',0,NULL,0,0.0143456715,'gifts.png','Gifts','Gifts',1,141.85,NULL,NULL),
+(7,NULL,1,1,1,1,6,'HE1000.600',0,NULL,0,0.0824767395,'transportation.png','Transportation','Transportation',1,815.53,NULL,NULL),
 (8,1614342115,1,1,1,1,9,'HE1000.999',2,NULL,0,0.0643572395,'entertainment.png','Other','Entertainment & Other',1,636.36,NULL,NULL),
 (9,NULL,1,1,2,0,0,'LT2000',1,1,0,1.0000000000,'leisure.png','Leisure Time','Leisure Time',1,270.00,NULL,NULL),
 (10,NULL,1,1,2,9,1,'LT2000.100',0,NULL,0,0.0653044655,'reading.png','Reading','Reading',1,17.63,NULL,NULL),
@@ -1173,7 +1180,7 @@ insert  into `level2customcategories`(`id`,`created_at`,`survey_login_id`,`surve
 (17,NULL,1,1,3,0,1,'FES1000',1,1,0,1.0000000000,'RB','RB','ADBTEL',1,35.00,NULL,NULL),
 (18,NULL,1,1,3,0,2,'FES1001',1,1,0,1.0000000000,'SW','SW','AFDAT',2,3.65,NULL,NULL),
 (19,NULL,1,1,3,0,3,'FES1002',1,1,0,1.0000000000,'SMB','SMB','ALETMB',2,4.65,NULL,NULL),
-(20,NULL,1,1,3,0,4,'FES1003',1,1,0,1.0000000000,'RFMB','RFMB','ALERFMB',2,2.65,NULL,NULL),
+(20,NULL,1,1,3,0,4,'FES1003',1,1,0,1.0000000000,'RFMB','RFMB','ALERFMB',2,4.90,NULL,NULL),
 (21,NULL,1,1,3,0,5,'FES1004',1,1,0,1.0000000000,'LWED','LWED','AFDDT',1,3.65,NULL,NULL),
 (22,NULL,1,1,3,0,0,'LIY18',3,NULL,0,1.0000000000,'EA','EA','EA',2,0.00,NULL,NULL),
 (23,NULL,1,1,3,22,1,'LIY18.010',3,1,0,0.0000000000,'AL','AL','AL',2,0.00,NULL,NULL),
@@ -1212,14 +1219,6 @@ insert  into `level2customcategories`(`id`,`created_at`,`survey_login_id`,`surve
 (101,NULL,18,13,2,9,5,'LT2000.500',0,NULL,0,0.1543572395,'games.png','Games','Games',1,41.68,NULL,NULL),
 (102,NULL,18,13,2,9,6,'LT2000.600',0,NULL,0,0.0225439783,'meditation.png','Meditation & Relaxing','Meditation & Relaxing',1,6.09,NULL,NULL),
 (103,NULL,18,13,2,9,7,'LT2000.999',2,NULL,0,0.1220974290,'other.png','Other','Other',1,32.97,NULL,NULL),
-(104,NULL,NULL,NULL,2,0,0,'LT2000',1,1,0,1.0000000000,'leisure.png','Leisure Time','Leisure Time',1,270.00,NULL,NULL),
-(105,NULL,NULL,NULL,2,9,1,'LT2000.100',0,NULL,0,0.0653044655,'reading.png','Reading','Reading',1,17.63,NULL,NULL),
-(106,NULL,NULL,NULL,2,9,2,'LT2000.200',0,NULL,0,0.3428146143,'watching.png','TV, YouTube, NetFlix, etc','TV',1,92.56,NULL,NULL),
-(107,NULL,NULL,NULL,2,9,3,'LT2000.300',0,NULL,0,0.0562110961,'nap.png','Nap','Nap',1,15.18,NULL,NULL),
-(108,NULL,NULL,NULL,2,9,4,'LT2000.400',0,NULL,0,0.2366711773,'media.png','Social Media','Social Media',1,63.90,NULL,NULL),
-(109,NULL,NULL,NULL,2,9,5,'LT2000.500',0,NULL,0,0.1543572395,'games.png','Games','Games',1,41.68,NULL,NULL),
-(110,NULL,NULL,NULL,2,9,6,'LT2000.600',0,NULL,0,0.0225439783,'meditation.png','Meditation & Relaxing','Meditation & Relaxing',1,6.09,NULL,NULL),
-(111,NULL,NULL,NULL,2,9,7,'LT2000.999',2,NULL,0,0.1220974290,'other.png','Other','Other',1,32.97,NULL,NULL),
 (119,NULL,19,14,2,0,0,'LT2000',1,1,0,1.0000000000,'leisure.png','Leisure Time','Leisure Time',1,270.00,NULL,NULL),
 (120,NULL,19,14,2,9,1,'LT2000.100',0,NULL,0,0.0653044655,'reading.png','Reading','Reading',1,17.63,NULL,NULL),
 (121,NULL,19,14,2,9,2,'LT2000.200',0,NULL,0,0.3428146143,'watching.png','TV, YouTube, NetFlix, etc','TV',1,92.56,NULL,NULL),
@@ -1262,7 +1261,47 @@ insert  into `level2customcategories`(`id`,`created_at`,`survey_login_id`,`surve
 (179,NULL,23,18,1,1,5,'HE1000.600',0,NULL,0,0.0824767395,'transportation.png','Transportation','Transportation',1,815.53,NULL,NULL),
 (180,1614972049,23,18,1,1,10,'HE1000.999',2,NULL,0,0.0351061894,'entertainment.png','Other','Entertainment & Other',1,347.13,NULL,NULL),
 (181,1614961626,23,18,1,1,7,'HE1000.700',0,NULL,0,0.0200000000,'avatar.png','TEST',NULL,1,197.76,NULL,NULL),
-(199,1614972049,23,18,1,1,8,'HE1000',0,NULL,0,0.0200000000,'facebook (1).png','TEST-1',NULL,1,197.76,NULL,NULL);
+(199,1614972049,23,18,1,1,8,'HE1000',0,NULL,0,0.0200000000,'facebook (1).png','TEST-1',NULL,1,197.76,NULL,NULL),
+(200,NULL,25,19,1,25,0,'HE1000',1,1,0,1.0000000000,'holiday.png','Holiday Expenditure','Holiday Expenditure',1,9888.00,NULL,NULL),
+(201,NULL,25,19,1,25,0,'HE1000.100',0,NULL,0,0.2528398058,'flights.png','Flights','Flights',1,2500.08,NULL,NULL),
+(202,NULL,25,19,1,25,1,'HE1000.200',0,NULL,0,0.2825859628,'hotels.png','Hotels','Hotels',1,2794.21,NULL,NULL),
+(203,NULL,25,19,1,25,3,'HE1000.300',0,NULL,0,0.1560851537,'sightseeing.png','Sightseeing','Sightseeing',1,1543.37,NULL,NULL),
+(204,NULL,25,19,1,25,2,'HE1000.400',0,NULL,0,0.1365604773,'meals.png','Meals','Meals',1,1350.31,NULL,NULL),
+(205,NULL,25,19,1,25,4,'HE1000.500',0,NULL,0,0.0143456715,'gifts.png','Gifts','Gifts',1,141.85,NULL,NULL),
+(206,NULL,25,19,1,25,5,'HE1000.600',0,NULL,0,0.0824767395,'transportation.png','Transportation','Transportation',1,815.53,NULL,NULL),
+(207,1615020033,25,19,1,25,9,'HE1000.999',2,NULL,0,0.0501061893,'entertainment.png','Other','Entertainment & Other',1,495.45,NULL,NULL),
+(215,NULL,25,19,2,0,0,'LT2000',1,1,0,1.0000000000,'leisure.png','Leisure Time','Leisure Time',1,3000.00,NULL,NULL),
+(216,NULL,25,19,2,9,1,'LT2000.100',0,NULL,0,0.1966666667,'reading.png','Reading','Reading',1,590.00,NULL,NULL),
+(217,NULL,25,19,2,9,2,'LT2000.200',0,NULL,0,0.1133333333,'watching.png','TV, YouTube, NetFlix, etc','TV',1,340.00,NULL,NULL),
+(218,NULL,25,19,2,9,3,'LT2000.300',0,NULL,0,0.0666666667,'nap.png','Nap','Nap',1,200.00,NULL,NULL),
+(219,NULL,25,19,2,9,4,'LT2000.400',0,NULL,0,0.1666666667,'media.png','Social Media','Social Media',1,500.00,NULL,NULL),
+(220,NULL,25,19,2,9,5,'LT2000.500',0,NULL,0,0.0233333333,'games.png','Games','Games',1,70.00,NULL,NULL),
+(221,NULL,25,19,2,9,6,'LT2000.600',0,NULL,0,0.0066666667,'meditation.png','Meditation & Relaxing','Meditation & Relaxing',1,20.00,NULL,NULL),
+(222,1615083761,25,19,2,9,15,'LT2000.999',2,NULL,0,0.0433333331,'other.png','Other','Other',1,130.00,NULL,NULL),
+(230,1615016528,25,19,2,1,7,'LT2000.700',0,NULL,0,0.0266666667,'facebook (1).png','Yuri-2',NULL,1,80.00,NULL,NULL),
+(231,1615016654,25,19,2,1,7,'LT2000',0,NULL,0,0.1000000000,'facebook (1).png','Yuri',NULL,1,300.00,NULL,NULL),
+(232,1615018100,25,19,2,1,7,'LT2000',0,NULL,0,0.0166666667,'avatar.png','Yuri',NULL,1,50.00,NULL,NULL),
+(233,1615018221,25,19,2,1,7,'LT2000',0,NULL,0,0.0066666667,'avatar.png','Yuri',NULL,1,20.00,NULL,NULL),
+(234,1615018392,25,19,2,1,7,'LT2000',0,NULL,0,0.0666666667,'avatar.png','Yuri',NULL,1,200.00,NULL,NULL),
+(235,1615020033,25,19,1,1,7,'HE1000',0,NULL,0,0.0250000000,'avatar.png','Yuri',NULL,1,247.20,NULL,NULL),
+(236,1615083530,25,19,2,1,12,'HE1000',0,NULL,0,0.1000000000,'instagram (1).png','Yuri',NULL,1,300.00,NULL,NULL),
+(237,1615083761,25,19,2,1,13,'HE1000',0,NULL,0,0.0666666667,'youtube.png','Yuri',NULL,1,200.00,NULL,NULL),
+(253,NULL,25,19,1,0,0,'HE1000',1,1,0,1.0000000000,'holiday.png','Holiday Expenditure','Holiday Expenditure',1,9888.00,NULL,NULL),
+(254,NULL,25,19,1,1,0,'HE1000.100',0,NULL,0,0.2530446549,'flights.png','Flights','Flights',1,2500.08,NULL,NULL),
+(255,NULL,25,19,1,1,1,'HE1000.200',0,NULL,0,0.2828146143,'hotels.png','Hotels','Hotels',1,2794.21,NULL,NULL),
+(256,NULL,25,19,1,1,3,'HE1000.300',0,NULL,0,0.1562110961,'sightseeing.png','Sightseeing','Sightseeing',1,1543.37,NULL,NULL),
+(257,NULL,25,19,1,1,2,'HE1000.400',0,NULL,0,0.1366711773,'meals.png','Meals','Meals',1,1350.31,NULL,NULL),
+(258,NULL,25,19,1,1,4,'HE1000.500',0,NULL,0,0.0143572395,'gifts.png','Gifts','Gifts',1,141.85,NULL,NULL),
+(259,NULL,25,19,1,1,5,'HE1000.600',0,NULL,0,0.0825439783,'transportation.png','Transportation','Transportation',1,815.53,NULL,NULL),
+(260,NULL,25,19,1,1,7,'HE1000.999',2,NULL,0,0.0743572395,'entertainment.png','Other','Entertainment & Other',1,734.65,NULL,NULL),
+(268,NULL,25,19,1,26,0,'HE1000',1,1,0,1.0000000000,'holiday.png','Holiday Expenditure','Holiday Expenditure',1,9888.00,NULL,NULL),
+(269,NULL,25,19,1,26,0,'HE1000.100',0,NULL,0,0.2528398058,'flights.png','Flights','Flights',1,2500.08,NULL,NULL),
+(270,NULL,25,19,1,26,1,'HE1000.200',0,NULL,0,0.2825859628,'hotels.png','Hotels','Hotels',1,2794.21,NULL,NULL),
+(271,NULL,25,19,1,26,3,'HE1000.300',0,NULL,0,0.1560851537,'sightseeing.png','Sightseeing','Sightseeing',1,1543.37,NULL,NULL),
+(272,NULL,25,19,1,26,2,'HE1000.400',0,NULL,0,0.1365604773,'meals.png','Meals','Meals',1,1350.31,NULL,NULL),
+(273,NULL,25,19,1,26,4,'HE1000.500',0,NULL,0,0.0143456715,'gifts.png','Gifts','Gifts',1,141.85,NULL,NULL),
+(274,NULL,25,19,1,26,5,'HE1000.600',0,NULL,0,0.0824767395,'transportation.png','Transportation','Transportation',1,815.53,NULL,NULL),
+(275,NULL,25,19,1,26,7,'HE1000.999',2,NULL,0,0.0743572395,'entertainment.png','Other','Entertainment & Other',1,734.65,NULL,NULL);
 
 UNLOCK TABLES;
 
@@ -1378,7 +1417,7 @@ CREATE TABLE `level2results` (
   `is_result` int(1) DEFAULT NULL,
   `surveyed_value` decimal(48,21) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 /*Data for the table `level2results` */
 
@@ -1388,7 +1427,8 @@ insert  into `level2results`(`id`,`created_at`,`survey_code_id`,`survey_login_id
 (1,1545137245,1,1,1,1,1,9888.000000000000000000000),
 (2,1545137290,1,1,1,1,1,9888.000000000000000000000),
 (7,1614954934,18,23,1,173,1,9888.000000000000000000000),
-(8,1614955203,18,23,1,173,1,9888.000000000000000000000);
+(8,1614955203,18,23,1,173,1,9888.000000000000000000000),
+(9,1615020158,19,25,1,200,1,9.000000000000000000000);
 
 UNLOCK TABLES;
 
@@ -1408,7 +1448,7 @@ CREATE TABLE `level2resultssummary` (
   `surveyed_value_number` decimal(48,21) DEFAULT NULL,
   `surveyed_value_average` decimal(48,21) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
 
 /*Data for the table `level2resultssummary` */
 
@@ -1416,7 +1456,8 @@ LOCK TABLES `level2resultssummary` WRITE;
 
 insert  into `level2resultssummary`(`id`,`created_at`,`survey_code_id`,`survey_login_id`,`template_id`,`level2customcategories_id`,`is_result`,`surveyed_value_sum`,`surveyed_value_number`,`surveyed_value_average`) values 
 (1,1545137299,1,1,1,1,1,19776.000000000000000000000,2.000000000000000000000,9888.000000000000000000000),
-(4,1614955203,18,23,1,NULL,1,29664.000000000000000000000,3.000000000000000000000,9888.000000000000000000000);
+(4,1614955203,18,23,1,NULL,1,29664.000000000000000000000,3.000000000000000000000,9888.000000000000000000000),
+(5,1615020158,19,25,1,NULL,1,9.000000000000000000000,1.000000000000000000000,9.000000000000000000000);
 
 UNLOCK TABLES;
 
@@ -1441,7 +1482,7 @@ CREATE TABLE `level2surveypages` (
   `activated_at` int(11) DEFAULT NULL,
   `deactivated_at` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=22 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=27 DEFAULT CHARSET=utf8;
 
 /*Data for the table `level2surveypages` */
 
@@ -1466,7 +1507,12 @@ insert  into `level2surveypages`(`id`,`created_at`,`survey_code_id`,`survey_page
 (18,1614629607,15,'Holiday Expenditure - Mar1th -2','How do you send this weekend? - Mar1th-2','This is Mar1th-2','This is Mar1th -2',2,' $ ','comma',2,'Mar1th-3',1,NULL,NULL),
 (19,1614629298,15,'Holiday Expenditure - Mar1th -2-update','How do you send this weekend? - Mar1th-2','This is Mar1th-3-update','This is Mar1th -3-update',2,' € ','comma',2,'',2,NULL,NULL),
 (20,1614694478,18,'Leisure Time - TEST','How long time do you send this weekend? - TEST','This is survey page for TEST','This is Leisure Time for TEST',2,'','comma',2,'TEST',1,NULL,NULL),
-(21,1614785261,18,'Holiday Expenditure - TEST','How long time do you send this weekend? - TEST','HE1000 - Holiday Expenditure - TEST','This is holiday expenditure - TEST',1,' $ ','comma',2,'Artedgs XYZ Wedrs Lifabes',2,NULL,NULL);
+(21,1614785261,18,'Holiday Expenditure - TEST','How long time do you send this weekend? - TEST','HE1000 - Holiday Expenditure - TEST','This is holiday expenditure - TEST',1,' $ ','comma',2,'Artedgs XYZ Wedrs Lifabes',2,NULL,NULL),
+(22,1615012116,19,'Holiday Expenditure - Yuri','How do you send this weekend? - Yuri','HE1000 - Holiday Expenditure - Yuri','This is holiday expenditure - Yuri',1,' $ ','comma',2,'Artedgs XYZ Wedrs Lifabes',1,NULL,NULL),
+(23,1615154987,19,'Leisure Time - Yuri -2','How long time do you send for this weekend? Yuri-2','LT2000-Leisure Time - Yuri -2','This is Leisure Time - Yuri-2',2,' ','comma',2,'Yuri-2',2,NULL,NULL),
+(24,1615123786,19,'Leisure Time - Yuri -2','How long time do you send for this weekend? Yuri-2','LT2000-Leisure Time - Yuri -2','This is Leisure Time - Yuri-2',2,' ','comma',2,'Yuri-2',2,NULL,NULL),
+(25,1615166285,19,'234234234','234234234','Test-Mar8th','This is Test-Mar8th',1,' $ ','comma',2,'',4,NULL,NULL),
+(26,1615168411,19,'Mar8th-1','Mar8th-1','This is Mar8th-1','Mar8th-1',1,' $ ','comma',2,'Mar8th-1',5,NULL,NULL);
 
 UNLOCK TABLES;
 
@@ -2908,7 +2954,7 @@ CREATE TABLE `surveycode` (
   `activated_at` int(11) DEFAULT NULL,
   `deactivated_at` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=19 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
 
 /*Data for the table `surveycode` */
 
@@ -2931,7 +2977,8 @@ insert  into `surveycode`(`id`,`created_at`,`survey_login_id`,`survey_code_name`
 (15,1614624068,20,'Mar1th-1','This is Mar1th-1',15,'2021-03-24 07:41:08','346DGFGFfe!@','2b6f42ab968a840b35adce445452405c',NULL,NULL,NULL),
 (16,1614673117,22,'Trip Analysis-Mar2th-4','This is Mar2th-4',15,'2021-03-15 09:18:37','346DGFGFfe!@11111','287fe2f171feb1f48f0f438f0dc11200',NULL,NULL,NULL),
 (17,1614673197,22,'Trip Analysis-Mar2th-4-update','This is Mar2th-4-update',15,'2021-03-15 09:19:57','346DGFGFfe!@11111-update','5784e4959656c039b391067877483db0',NULL,NULL,NULL),
-(18,1614693377,23,'TEST','This is survey code for TEST',15,'2021-03-06 02:56:17','346DGFGFfe!@TEST','2c1a2a58a02ea68b2c4bcde20f25c53e',NULL,NULL,NULL);
+(18,1614693377,23,'TEST','This is survey code for TEST',15,'2021-03-06 02:56:17','346DGFGFfe!@TEST','2c1a2a58a02ea68b2c4bcde20f25c53e',NULL,NULL,NULL),
+(19,1615012014,25,'Trip Analysis-Yuri','This is Yuri-Testing',20,'0000-00-00 00:00:00','346DGFGFfe!@','a10c6645e3917ee30b7325815ccf94ac',NULL,NULL,NULL);
 
 UNLOCK TABLES;
 
@@ -2961,7 +3008,7 @@ CREATE TABLE `surveylogin` (
   `transaction_id` int(50) DEFAULT NULL,
   `payment_success` int(1) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=29 DEFAULT CHARSET=utf8;
 
 /*Data for the table `surveylogin` */
 
@@ -2981,7 +3028,12 @@ insert  into `surveylogin`(`id`,`created_at`,`activated_at`,`deactivated_at`,`us
 (20,1614605813,NULL,NULL,13,1,1,'Mar1th-1',2021,0,'Feb 1 2020',1,'Jan 31 2021',2,'234234HFFHSK%%$1','078b72723beecb5ac6f2ec866e406d74','qqqqHFFHSK546','cc49b5989bf4877a5af00a8259fa3fd0',NULL,1),
 (21,1614671321,NULL,NULL,12,2,3,'Mar2th-3',2021,0,'Feb 1 2021',2,'Jul 31 2021',3,'234234HFFHSK%%$1','a83f817d45bd5e96fee7ac4c63e2ad3c','qqqqHFFHSK546','e233d252d179314f72ebae410817511a',NULL,0),
 (22,1614671482,NULL,NULL,12,2,1,'Mar2th-4-update',2021,0,'Oct 1 2021',6,'Jan 31 2021',3,'234234HFFHSK%%$1','a83f817d45bd5e96fee7ac4c63e2ad3c','qqqqHFFHSK546','e233d252d179314f72ebae410817511a',NULL,1),
-(23,1614690039,NULL,NULL,19,10,1,'TEST',2021,0,'Feb 1 2020',1,'Jan 31 2021',2,'234234HFFHSK%%$1','e9e77a9efc79e791e66def3b56946124','qqqqHFFHSK546','379f8e22e913997b9a60b9f8a6deeb8e',NULL,1);
+(23,1614690039,NULL,NULL,19,10,1,'TEST',2021,0,'Feb 1 2020',1,'Jan 31 2021',2,'234234HFFHSK%%$1','e9e77a9efc79e791e66def3b56946124','qqqqHFFHSK546','379f8e22e913997b9a60b9f8a6deeb8e',NULL,1),
+(24,1615010427,NULL,NULL,21,13,3,'Enterprise-Yuri',2021,0,'Aug 1 2021',5,'Nov 30 2021',1,'234234HFFHSK%%$1','463427e973851ba1cecf8889e5780efa','qqqqHFFHSK546','48cebb54c84053bc99e9584a66119c88',NULL,1),
+(25,1615011438,NULL,NULL,21,13,1,'Enterprise-Yuri-2',2021,0,'Feb 1 2020',1,'Jan 31 2021',2,'234234HFFHSK%%$1','463427e973851ba1cecf8889e5780efa','qqqqHFFHSK546','48cebb54c84053bc99e9584a66119c88',NULL,1),
+(26,1615189677,NULL,NULL,20,3,1,'Enterprise-8th-3',2021,0,'Dec 1 2021',4,'Mar 31 2020',2,'234234HFFHSK%%$1','463427e973851ba1cecf8889e5780efa','qqqqHFFHSK546','3897727585c0fda7b49d416c10bce8c1',NULL,1),
+(27,1615190186,NULL,NULL,20,3,6,'Enterprise-8th-1',2021,0,'Dec 1 2021',2,'May 31 2020',2,'234234HFFHSK%%$1','463427e973851ba1cecf8889e5780efa','qqqqHFFHSK546','3897727585c0fda7b49d416c10bce8c1',NULL,1),
+(28,1615190779,NULL,NULL,20,3,8,'Enterprise-8th-3',2021,10,'Dec 1 2020',1,'Nov 30 2021',3,'234234HFFHSK%%$1','463427e973851ba1cecf8889e5780efa','qqqqHFFHSK546','3897727585c0fda7b49d416c10bce8c1',NULL,1);
 
 UNLOCK TABLES;
 
@@ -2998,7 +3050,7 @@ CREATE TABLE `surveypageorder` (
   `activated_at` int(11) DEFAULT NULL,
   `deactivated_at` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=40 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=45 DEFAULT CHARSET=utf8;
 
 /*Data for the table `surveypageorder` */
 
@@ -3025,7 +3077,12 @@ insert  into `surveypageorder`(`id`,`created_at`,`surveycode_id`,`surveypage_id`
 (36,1614674078,17,14,1,NULL,NULL),
 (37,1614674181,17,15,2,NULL,NULL),
 (38,1614694478,18,20,1,NULL,NULL),
-(39,1614785261,18,21,2,NULL,NULL);
+(39,1614785261,18,21,2,NULL,NULL),
+(40,1615012116,19,22,0,NULL,NULL),
+(41,1615016225,19,23,1,NULL,NULL),
+(42,1615123786,19,24,2,NULL,NULL),
+(43,1615166285,19,25,4,NULL,NULL),
+(44,1615168411,19,26,5,NULL,NULL);
 
 UNLOCK TABLES;
 
@@ -3551,7 +3608,7 @@ CREATE TABLE `user` (
   `deactivated_at` int(11) DEFAULT NULL,
   `activated_at` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=20 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=23 DEFAULT CHARSET=utf8;
 
 /*Data for the table `user` */
 
@@ -3574,7 +3631,10 @@ insert  into `user`(`id`,`email`,`password`,`first_name`,`last_name`,`job_title`
 (16,'Mar2th@gmail.com','d2f881ecc2dfae9bef2c492409c2d2ee','Mar','2th','manager',9,'+61123412341',3,1614676991,NULL,0),
 (17,'Mar2th@gmail.com','5fe067c378e723b61fb0df2428e00019','Mar','2th','manager',2,'+61123412341',4,1614677021,NULL,0),
 (18,'TEST@test.com','5cb3475e9f89aa4d5ac1cfb989cc9eb0','TEST','TEST','manager',2,'+61123412341',12,1614677989,NULL,0),
-(19,'TEST@test.com','97a6cf390c5b645efd2daa8d9443c54d','TEST-1','TEST','manager',10,'+61123412341',12,1614678743,NULL,0);
+(19,'TEST@test.com','97a6cf390c5b645efd2daa8d9443c54d','TEST-1','TEST','manager',10,'+61123412341',12,1614678743,NULL,0),
+(20,'Yuri@gmail.com','a7a2a019b9b03dac23e753e78dcd74ee','Yuri','Zhould','Manager',3,'+61123412341',157,1614998255,NULL,0),
+(21,'Yuri@gmail.com','0ea9872c6688d21561ddef5577464dd5','Yuri','Zhould','Manager',13,'+61123412341',157,1614998325,NULL,0),
+(22,'Yuri@gmail.com','98c1afb3b416189fdb5612a05f20b7c2','Yuri-update','Zhould','Manager',14,'+61123412341',157,1615000301,NULL,0);
 
 UNLOCK TABLES;
 

@@ -29,11 +29,6 @@ session_start();
   <strong> Failed! </strong><br><span class="notification"> Please fill email field</span>
 </div>
   <div class="container-fluid">
-    <div class="p-3">
-      <button id="logout" class="btn btn-secondary float-right px-3">
-        <i class="fa fa-sign-out"></i> Logout
-      </button>
-    </div>
     <div class="row mt-4">
       <div class="col-md-2 col-sm-0"></div>
       <div class="col-md-8 col-sm-12 mt-5 p-5 rounded content text-dark">

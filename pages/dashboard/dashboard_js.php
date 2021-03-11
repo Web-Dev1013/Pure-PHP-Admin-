@@ -3,9 +3,8 @@
 
     // When load, get user survey page data
     var value_arr = [];
-    var base_url = "https://localhost/admin/";
     $.ajax({
-      url: base_url + "model/dashboard_model.php",
+      url: "../../model/dashboard_model.php",
       type: "POST",
       data: {
         type: "get_survey_page_data"
@@ -26,22 +25,26 @@
           for (y in res[x]) {
             value_arr.push(res[x][y]["value"]);
             if (res[x][y]["flag_id"] == 1) {
-              thead_data = "<div class='page-table'><table id='table_" + x + "' class='table table-hover'><thead><tr id='" + res[x][y]["id"] + "'><td><img src='" + base_url + "admin/assets/image/page1/" + res[x][y]["icon_url"] + "' width='30px' height='30px'></td><td>" + res[x][y]["name"] + "<p class='sup t mb-0 text-gold'>" + res[x][y]["category_code"] + "</p></td><td><span class='sp_current'> " + (res[x][y]["currency"] == undefined ? " " : res[x][y]["currency"]) + " </span></td><td><input type='text' class='value w-50 form-control' value='" + res[x][y]["value_load"] + "'></td><td><span class='page_unit sup'>" + res[x][y]["unit"] + "</span></td></tr></thead><tbody class='row_position'>";
+              thead_data = "<div class='page-table'><table id='table_" + x + "' class='table table-hover'><colgroup><col style = 'width:10%'><col style='width:40%'><col style='width : 5%'><col style='width: 20%'><col style='25%'></colgroup><thead><tr id='" + res[x][y]["id"] + "'><td><img src='" + "../../admin/assets/image/page1/" + res[x][y]["icon_url"] + "' width='30px' height='30px'></td><td>" + res[x][y]["name"] + "<p class='sup t mb-0 text-gold'>" + res[x][y]["category_code"] + "</p></td><td><span class='sp_current'> " + (res[x][y]["currency"] == undefined ? " " : res[x][y]["currency"]) + " </span></td><td><input type='text' class='value form-control text-right' value='" + res[x][y]["value_load"] + "'></td><td class='text-right'><span class='page_unit sup'>" + res[x][y]["unit"] + "</span></td></tr></thead><tbody class='row_position'>";
             }
             if (res[x][y]["flag_id"] == 0) {
               value_sum += Number(res[x][y]["value_load"]);
-              tbody_data += "<tr id='" + res[x][y]["id"] + "'><td><img src='" + base_url + "admin/assets/image/page1/" + res[x][y]["icon_url"] + "' width='30px' height='30px'></td><td>" + res[x][y]["name"] + "<p class='sup mb-0 text-gold'>" + res[x][y]["category_code"] + "</p></td><td><span class='sp_current'> " + (res[x][y]["currency"] == undefined ? " " : res[x][y]["currency"]) + " </span></td><td class='value'>" + res[x][y]["value_load"] + "</td><td><span class='page_unit sup'>" + res[x][y]["unit"] + "</span></td></tr>";
+              tbody_data += "<tr id='" + res[x][y]["id"] + "'><td><img src='" + "../../admin/assets/image/page1/" + res[x][y]["icon_url"] + "' width='30px' height='30px'></td><td>" + res[x][y]["name"] + "<p class='sup mb-0 text-gold'>" + res[x][y]["category_code"] + "</p></td><td><span class='sp_current'> " + (res[x][y]["currency"] == undefined ? " " : res[x][y]["currency"]) + " </span></td><td class='value text-right'>" + res[x][y]["value_load"] + "</td><td class='text-right'><span class='page_unit sup'>" + res[x][y]["unit"] + "</span></td></tr>";
             }
             if (res[x][y]["flag_id"] == 2) {
-              tfoot_data = "</tbody><tfoot><tr id='" + res[x][y]["id"] + "'><td><i class='fas fa-question-circle fa-2x text-gold'></i></td><td>" + res[x][y]["name"] + "<p class='sup mb-0 text-gold'>" + res[x][y]["category_code"] + "</p></td><td><span class='sp_current'> " + (res[x][y]["currency"] == undefined ? " " : res[x][y]["currency"]) + " </span></td><td class='value'>" + (total_value - value_sum) + "</td><td><span class='page_unit sup'>" + res[x][y]["unit"] + "</span></td></tr></tfoot></table>";
+              tfoot_data = "</tbody><tfoot><tr id='" + res[x][y]["id"] + "'><td><i class='fas fa-question-circle fa-2x text-gold'></i></td><td>" + res[x][y]["name"] + "<p class='sup mb-0 text-gold'>" + res[x][y]["category_code"] + "</p></td><td><span class='sp_current'> " + (res[x][y]["currency"] == undefined ? " " : res[x][y]["currency"]) + " </span></td><td class='value text-right'>" + (total_value - value_sum) + "</td><td class='text-right'><span class='page_unit sup'>" + res[x][y]["unit"] + "</span></td></tr></tfoot></table>";
             }
           }
 
           sp_data += thead_data + tbody_data + tfoot_data;
-          sp_data += '</div><div class="py-3"><p class="h5 text-gold"><i>Recommend a category not covered above?</i></p><div class="d-flex"><input type="text" class="form-control w-50 text-center recommend border-gold" id="page' + x + '_category" name="page' + x + '_category" placeholder="Type category and press plus to recommend" autocomplete="off"><span class="px-2 py-1 text-gold add_category" id="page' + x + '_add_category"><i class="fa fa-plus-circle fa-2x"></i></span></div></div><div class="py-3"><p class="h5 text-gold"><i>Feedback you would like to share?</i></p><textarea rows="4" class="w-75 border-gold p-2 text-dark page-feedback" id="page' + x + '_feedback" placeholder="We value and appreciate your feedback."></textarea></div><div class="pt-4"><button class="btn btn-warning prev"><i class="fa fa-arrow-left"></i><span class="px-2"> Back </span></button><button class="btn btn-warning next px-4 float-right"><span class="font-weight-bold"> Next </span><i class="fa fa-arrow-right"></i></button></div></div>';
+          sp_data += '</div><div class="py-3"><p class="h5 text-gold"><i>Recommend a category not covered above?</i></p><div class="d-flex"><input type="text" class="form-control w-50 text-center recommend border-gold" id="page' + x + '_category" name="page' + x + '_category" placeholder="Type category and press plus to recommend" autocomplete="off"><span class="px-2 py-1 text-gold add_category" id="page' + x + '_add_category"><i class="fa fa-plus-circle fa-2x"></i></span></div></div><div class="py-3"><p class="h5 text-gold"><i>Feedback you would like to share?</i></p><textarea rows="4" class="w-75 border-gold p-2 text-dark page-feedback" id="page' + x + '_feedback" placeholder="We value and appreciate your feedback."></textarea></div><div class="pt-4"><button class="btn btn-warning prev"><span class="px-2"> Back </span></button><button class="btn btn-warning next px-4 float-right"><span class="font-weight-bold"> Next </span></button></div></div>';
           sp_data_package += sp_data;
         }
         $(".content").html(sp_data_package);
+        if ($(".page").length == 1) {
+          $(".next").children("span").html("Submit ");
+          $(".next").attr("id", "submit");
+        }
         $(".page").eq(0).removeClass("d-none");
         $(".page:eq(0) .prev").hide();
         new AutoNumeric.multiple('.value', {
@@ -73,14 +76,14 @@
           decimalPlaces: 2
         });
         $.ajax({
-          url: base_url + "model/dashboard_model.php",
+          url: "../../model/dashboard_model.php",
           type: "POST",
           data: {
             type: "change_value",
             category_id: $(e.target).parents("tr").attr("id"),
-            value: $(this).val()
+            value: $(this).val().replace(",", "")
           }
-        })
+        });
       } else {
         $(".alert-danger .notification").html("The total value can't be empty. Please fill input field.");
         $(".alert-danger").addClass("alert-active");
@@ -99,7 +102,7 @@
             if ($(".page-feedback:eq(" + i + ")").val() != "") {
               flag = true;
               $.ajax({
-                url: base_url + "model/dashboard_model.php",
+                url: "../../model/dashboard_model.php",
                 type: "POST",
                 data: {
                   type: "feedback-submit",
@@ -111,11 +114,7 @@
             }
           }
           if (flag == true) {
-            $(".alert-success").html("Thank You. Thank you for your responses.");
-            $(".alert-success").addClass("alert-active");
-            setTimeout(function() {
-              $(".alert-success").removeClass("alert-active");
-            }, 1500);
+            window.location.href = "../../pages/message/message.php";
           } else {
             $(".alert-danger .notification").html("Please leave any feedback.");
             $(".alert-danger").addClass("alert-active");
@@ -150,7 +149,7 @@
       if ($(e.target).parent().hasClass("add_category") == true || $(e.target).parents("span").hasClass("add_category") == true) {
         if ($(".recommend:eq(" + page_num + ")").val() != "") {
           $.ajax({
-            url: base_url + "model/dashboard_model.php",
+            url: "../../model/dashboard_model.php",
             type: "POST",
             data: {
               type: "add_category",
@@ -179,23 +178,6 @@
       }
     });
 
-    //logout event
-    // $("#logout").on("click", function(e) {
-    //   e.preventDefault();
-    //   $.ajax({
-    //     url: "model/auth_model.php",
-    //     type: "post",
-    //     data: {
-    //       type: "logout"
-    //     },
-    //     success: function(res) {
-    //       if (res == "success") {
-    //         window.location.href = "/php/index.php";
-    //       }
-    //     }
-    //   });
-    // });
-
     $(window).on("mouseenter", function(e) {
       if ($(e.target).parents("table").hasClass("table-hover") == true) {
         $(e.target).parents("tbody tr").find(".text-gold").css("color", "white");
@@ -206,7 +188,5 @@
         $(e.target).parents("tbody tr").find(".text-gold").css("color", "#d0aa3c");
       }
     });
-
-
   });
 </script>
